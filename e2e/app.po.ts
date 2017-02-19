@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class Dubplus.Github.IoPage {
+export class DubPlusSitePage {
   navigateTo() {
     return browser.get('/');
   }

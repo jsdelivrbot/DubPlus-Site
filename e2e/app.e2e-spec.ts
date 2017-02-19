@@ -1,10 +1,10 @@
-import { Dubplus.Github.IoPage } from './app.po';
+import { DubPlusSitePage } from './app.po';
 
-describe('dubplus.github.io App', () => {
-  let page: Dubplus.Github.IoPage;
+describe('dubplus-site App', () => {
+  let page: DubPlusSitePage;
 
   beforeEach(() => {
-    page = new Dubplus.Github.IoPage();
+    page = new DubPlusSitePage();
   });
 
   it('should display message saying app works', () => {

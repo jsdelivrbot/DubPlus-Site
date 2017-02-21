@@ -9,7 +9,7 @@
       </a>
     </div>
 
-    <div class="navbar-collapse" [class.show]="navbarOpen">
+    <div class="navbar-custom-collapse" [@collapse]="navbarOpen ? 'false' : 'true'">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" routerLink="/features" routerLinkActive="active">
           <a class="nav-link">Features</a>

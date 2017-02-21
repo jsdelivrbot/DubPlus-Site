@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.navbar {
+  background: $mixed;
+  transition: ease .5s;
+  -webkit-transition: ease .5s;
+
+  .navbar-brand img {
+    width: 150px;
+  }
+
+  .nav-item,
+  .btn {
+    text-transform: uppercase;
+  }
+
+  .nav-item a {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .btn-download {
+    border: 2px solid $cyan;
+    color: white;
+
+    &:hover {
+      background: $cyan;
+    }
+  }
+}

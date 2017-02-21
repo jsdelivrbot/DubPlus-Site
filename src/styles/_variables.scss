@@ -1,0 +1,9 @@
+@import "../../node_modules/bootstrap/scss/variables";
+
+$cyan: #6fcbdc;
+$mixed: #660078;
+$pink: #eb008b;
+
+.btn-info {
+    background-color: $cyan;
+}

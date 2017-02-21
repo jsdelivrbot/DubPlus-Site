@@ -1,0 +1,32 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button">
+    <span class="navbar-toggler-icon" (click)="navbarOpen = !navbarOpen"></span>
+    </button>
+    <div class="navbar-brand logo">
+      <a routerLink="/" title="#">
+        <img src="assets/img/logo-header.png" alt="Dub+" />
+      </a>
+    </div>
+
+    <div class="navbar-collapse" [class.open]="navbarOpen" [class.collapse]="!navbarOpen" [@collapse]="!navbarOpen ? 'true' : 'false'">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLink="/features" routerLinkActive="active">
+          <a class="nav-link">Features</a>
+        </li>
+        <li class="nav-item" routerLink="/download" routerLinkActive="active">
+          <a class="nav-link">Download</a>
+        </li>
+        <li class="nav-item" routerLink="/about" routerLinkActive="active">
+          <a class="nav-link">About</a>
+        </li>
+        <li class="nav-item" routerLink="/contact" routerLinkActive="active">
+          <a class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="my-2 my-md-0">
+        <a class="btn btn-download" routerLink="/download">Download</a>
+      </div>
+    </div>
+  </div>
+</nav>

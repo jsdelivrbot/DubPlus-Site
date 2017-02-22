@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
+import {HomeComponent} from './home/home.component';
 import {FeaturesComponent} from './features/features.component';
 import {DownloadComponent} from './download/download.component';
 import {AboutComponent} from './about/about.component';
@@ -10,7 +11,7 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: FeaturesComponent
+    component: HomeComponent
   },
   {
     path: 'features',

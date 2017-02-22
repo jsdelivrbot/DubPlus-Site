@@ -5,13 +5,18 @@
   transition: ease .5s;
   -webkit-transition: ease .5s;
 
-  .navbar-collapse {
-     @media (max-width: 991px) {
-      height: 0;
+  .navbar-custom-collapse {
+    display: flex!important;
+    width: 100%;
 
-      &.show {
-        height: auto;
-      }
+    // Override collapse animation on large screens to always show links
+    @media only screen and (min-width : map-get($grid-breakpoints, 'lg')) {
+        height: auto !important;
+        opacity: 1 !important;
+	  }
+
+    .navbar-nav {
+      width: 100%;
     }
   }
 

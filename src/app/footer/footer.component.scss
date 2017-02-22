@@ -7,16 +7,6 @@ footer {
   bottom: 0;
   width: 100%;
 
-  @media (min-width: 768px) {
-      height: 75px;
-      line-height: 75px;
-
-      .container {
-        height: 75px;
-        line-height: 75px;
-      }
-  }
-
   .logo,
   ul {
     display: inline-block;
@@ -33,7 +23,6 @@ footer {
     -webkit-flex: 1 1;
     -moz-flex: 1 1;
     -ms-flex: 1 1;
-    text-align: left;
     padding: 0 40px;
 
     li {
@@ -53,44 +42,38 @@ footer {
     }
   }
 
-  ul.social li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 1em;
+  ul.social {
+    padding-left: 0;
 
-    a {
-      color: white;
-      transition: all 0.3s ease-out 0s;
-      display: block;
-      opacity: 0.5;
+    @media only screen and (min-width : map-get($grid-breakpoints, 'md')) {
+        padding-left: 40px;
+    }
 
-      &:hover {
-        opacity: 0.8;
-      }
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 1em;
 
-      img {
-        width: 28px;
-        position: relative;
-        top: -5px;
+      a {
+        color: white;
+        transition: all 0.3s ease-out 0s;
+        display: block;
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        i {
+          position: relative;
+          top: 5px;
+        }
+
+        img {
+          width: 28px;
+        }
       }
     }
   }
 
-}
-
-@media (max-width: 559px) {
-  footer {
-    margin-bottom: 0;
-    height: auto;
-    line-height: inherit;
-  }
-  footer ul.menu {
-    margin-top: 20px
-  }
-  footer ul.menu li:first-child {
-    padding-left: 0
-  }
-  footer ul.menu li:last-child {
-    padding-right: 0
-  }
 }

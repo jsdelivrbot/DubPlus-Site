@@ -3,10 +3,16 @@
 @import "./styles/variables";
 @import "./styles/font";
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   overflow-x: hidden;
   color: $mixed;
-  min-height: 100%;
 }
 
 html {
@@ -22,27 +28,55 @@ html {
   }
 }
 
-.wrap {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center
-}
-
-.flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex
-}
-
-body {
-  background-color: #543085;
-  text-align: center
-}
-
 .container {
   width: 100%;
+}
+
+.color-cyan {
+  color: $cyan;
+}
+.color-mixed {
+  color: $mixed;
+}
+.color-pink {
+  color: $pink;
+}
+
+.btn-cyan,
+.btn-mixed,
+.btn-pink {
+  color: white;
+  border-color: white;
+
+  &:active {
+    color: white;
+  }
+}
+
+.btn-cyan {
+  background-color: $cyan;
+
+  &:hover {
+    border-color: $cyan;
+    background-color: white;
+    color: $cyan;
+  }
+}
+.btn-mixed {
+  background-color: $mixed;
+
+  &:hover {
+    border-color: $mixed;
+    background-color: white;
+    color: $mixed;
+  }
+}
+.btn-pink {
+  background-color: $pink;
+
+  &:hover {
+    border-color: $pink;
+    background-color: white;
+    color: $pink;
+  }
 }

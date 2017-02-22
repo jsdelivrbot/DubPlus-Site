@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.call-to-actions a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.directions {
+  font-size: smaller;
+  color: gray;
+}
+
+.home-list .home-list-item {
+
+  @media only screen and (min-width : map-get($grid-breakpoints, 'sm')) {
+    &.home-list-item-right .home-list-item-text {
+      text-align: right;
+    }
+  }
+
+  .home-list-item-text {
+    text-align: center;
+    margin: auto;
+
+    @media only screen and (min-width : map-get($grid-breakpoints, 'sm')) {
+      text-align: left;
+	  }
+  }
+}

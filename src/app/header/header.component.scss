@@ -6,10 +6,13 @@
   -webkit-transition: ease .5s;
 
   .navbar-custom-collapse {
-    display: flex!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
     width: 100%;
 
-    // Override collapse animation on large screens to always show links
+    /* Override collapse animation on large screens to always show links*/
     @media only screen and (min-width : map-get($grid-breakpoints, 'lg')) {
         height: auto !important;
         opacity: 1 !important;
@@ -31,6 +34,7 @@
 
   .nav-item a {
     cursor: pointer;
+    text-align: center;
 
     &:hover {
       text-decoration: underline;

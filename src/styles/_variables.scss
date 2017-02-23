@@ -3,7 +3,9 @@
 $cyan: #6fcbdc;
 $mixed: #660078;
 $pink: #eb008b;
-
-.btn-info {
-    background-color: $cyan;
-}
+$loader-bg: rgba(0, 0, 0, .85);
+$loader-color: $cyan;
+$loader-color-external: $pink;
+$loader-size: 48px;
+$loader-border: 8px;
+$loader-size-external: $loader-size + ($loader-border * 2);

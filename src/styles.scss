@@ -51,30 +51,33 @@ html {
   }
 }
 
+.badge-cyan,
 .btn-cyan {
   background-color: $cyan;
-
-  &:hover {
-    border-color: $cyan;
-    background-color: white;
-    color: $cyan;
-  }
 }
+
+.badge-mixed,
 .btn-mixed {
   background-color: $mixed;
-
-  &:hover {
-    border-color: $mixed;
-    background-color: white;
-    color: $mixed;
-  }
 }
+
+.badge-pink,
 .btn-pink {
   background-color: $pink;
+}
 
-  &:hover {
-    border-color: $pink;
-    background-color: white;
-    color: $pink;
-  }
+.btn-cyan:hover {
+  border-color: $cyan;
+  background-color: white;
+  color: $cyan;
+}
+.btn-mixed:hover {
+  border-color: $mixed;
+  background-color: white;
+  color: $mixed;
+}
+.btn-pink:hover {
+  border-color: $pink;
+  background-color: white;
+  color: $pink;
 }

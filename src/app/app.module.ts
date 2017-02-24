@@ -7,6 +7,7 @@ import { FuelUiModule } from 'fuel-ui';
 
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
+import { FeaturesService } from './features/features.service';
 import { DownloadComponent } from './download/download.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -32,7 +33,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     FuelUiModule
   ],
-  providers: [],
+  providers: [FeaturesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

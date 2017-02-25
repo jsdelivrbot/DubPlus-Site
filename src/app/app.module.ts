@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FuelUiModule } from 'fuel-ui';
+import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -31,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    FuelUiModule
+    FuelUiModule,
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
   providers: [FeaturesService],
   bootstrap: [AppComponent]

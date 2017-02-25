@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Angulartics2GoogleAnalytics } from 'angulartics2';
+
+declare var ga: Function;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Dub+ app works!';
+  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
 }

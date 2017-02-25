@@ -1,31 +1,37 @@
 <nav class="navbar navbar-toggleable-md navbar-inverse">
   <div class="container">
-    <button class="navbar-toggler navbar-toggler-right" type="button" (click)="navbarOpen = !navbarOpen">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler navbar-toggler-right" type="button" (click)="navbarOpen = !navbarOpen"
+       angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="NavbarToggle">
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-brand logo">
-      <a routerLink="/" title="#">
+      <a routerLink="/" title="#" angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="Logo">
         <img src="assets/img/logo-header.png" alt="Dub+" />
       </a>
     </div>
 
     <div class="navbar-custom-collapse" [@collapse]="navbarOpen ? 'false' : 'true'">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item" routerLink="/features" routerLinkActive="active">
-          <a class="nav-link">Features</a>
+        <li class="nav-item" routerLink="/features" routerLinkActive="active"
+          angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="Features">
+            <a class="nav-link">Features</a>
         </li>
-        <li class="nav-item" routerLink="/download" routerLinkActive="active">
-          <a class="nav-link">Download</a>
+        <li class="nav-item" routerLink="/download" routerLinkActive="active"
+          angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="Download">
+            <a class="nav-link">Download</a>
         </li>
-        <li class="nav-item" routerLink="/about" routerLinkActive="active">
-          <a class="nav-link">About</a>
+        <li class="nav-item" routerLink="/about" routerLinkActive="active"
+          angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="About">
+            <a class="nav-link">About</a>
         </li>
-        <li class="nav-item" routerLink="/contact" routerLinkActive="active">
-          <a class="nav-link">Contact</a>
+        <li class="nav-item" routerLink="/contact" routerLinkActive="active"
+          angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="Contact">
+            <a class="nav-link">Contact</a>
         </li>
       </ul>
-      <div class="my-2 my-md-0 hidden-md-down">
-        <a class="btn btn-download" routerLink="/download">Install</a>
+      <div class="my-2 my-md-0 hidden-md-down"
+          angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="Install">
+            <a class="btn btn-download" routerLink="/download">Install</a>
       </div>
     </div>
   </div>

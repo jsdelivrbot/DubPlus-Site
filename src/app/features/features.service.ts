@@ -29,6 +29,7 @@ export class FeaturesService {
     features.push(new Feature('Custom CSS', 'Have your own or another community made theme you want to use? Put in the link to the stylesheet and enjoy your new experience!'));
     features.push(new Feature('Custom Background', 'Display your own custom background if you aren\'t enjoying the room\'s'));
     features.push(new Feature('Snow Animation', 'Let it snow!!!'));
+    features.push(new Feature('Rain Animation', 'Make it rain!!!', 'NEW!'));
 
     return features;
   }

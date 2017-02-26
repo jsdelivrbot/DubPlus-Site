@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.team-member-list-item {
+
+    .team-member-social-btns {
+        .github-btn {
+            width: 180px;
+            height: 1.75rem;
+            margin-top: .25rem;
+            border: 0;
+        }
+
+        .twitter-follow-btn {
+            height: 1.75rem;
+        }
+
+        .dubtrack-follow-btn {
+            height: 1.75rem;
+            padding: .25em;
+            font-size: 11px;
+        }
+    }
+
+    .team-member-picture {
+        margin: 1rem;
+
+        @media only screen and (min-width : map-get($grid-breakpoints, 'sm')) {
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    .team-member-info {
+        a.team-member {
+            line-height: 2rem;
+            color: #555;
+
+            &:hover {
+                color: #333;
+                text-decoration: none;
+            }
+        }
+    }
+}

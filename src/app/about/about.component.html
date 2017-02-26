@@ -1,3 +1,10 @@
-<p>
-  about works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <h2>Team</h2>
+    <p>Dub+ is maintained by the founding team, and we are looking forward to the massive support and involvement of our community.</p>
+
+    <div class="list-group">
+      <app-team-member *ngFor="let member of members" [member]="member"></app-team-member>
+    </div>
+  </div>
+</div>

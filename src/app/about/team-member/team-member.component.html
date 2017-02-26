@@ -1,0 +1,23 @@
+<div class="list-group-item team-member-list-item">
+  <div class="row">
+    <div class="col-12 col-sm-3 col-lg-2 team-member-social-btns">
+      <iframe *ngIf="member.Github && member.Github.length > 0" class="github-btn" [src]="githubIframeSrc"></iframe>
+      <iframe *ngIf="member.Twitter && member.Twitter.length > 0" id="twitter-widget-2" scrolling="no" allowtransparency="true" class="twitter-follow-btn" title="@{{member.Twitter}} Twitter Follow Button" [src]="twitterIframeSrc" frameborder="0"></iframe><br/>
+      <a *ngIf="member.Dubtrack && member.Dubtrack.length > 0" [href]="dubtrackProfileSrc" class="btn btn-mixed dubtrack-follow-btn">
+        <img src="./assets/img/dubtrack_logo.png" height="14" /> Follow @{{member.Dubtrack}}
+      </a>
+    </div>
+    <div *ngIf="member.Github && member.Github.length > 0" class="col-12 col-sm-3 col-lg-1 team-member-picture">
+      <a class="team-member" [href]="githubProfileSrc">
+        <img [src]="githubAvatarSrc" alt="@{{member.Github}}" width="60" height="60">
+      </a>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-8 team-member-info">
+        <a *ngIf="member.Github && member.Github.length > 0" class="team-member" [href]="githubProfileSrc">
+          <strong>{{member.Name}}</strong> <small>@{{member.Github}}</small>
+          <div class="team-member-title"><h5>{{member.Title}}</h5></div>
+        </a>
+        <p *ngIf="member.Description && member.Description.length > 0" class="team-member-description" [innerHTML]="member.Description"></p>
+    </div>
+  </div>
+</div>

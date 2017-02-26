@@ -5,6 +5,12 @@
   transition: ease .5s;
   -webkit-transition: ease .5s;
 
+  @media only screen and (max-width : map-get($grid-breakpoints, 'sm')) {
+      .container {
+        width: 100%;
+      }
+  }
+
   .navbar-custom-collapse {
     display: -webkit-box;
     display: -ms-flexbox;

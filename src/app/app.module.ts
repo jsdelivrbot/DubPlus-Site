@@ -11,10 +11,12 @@ import { FeaturesComponent } from './features/features.component';
 import { FeaturesService } from './features/features.service';
 import { DownloadComponent } from './download/download.component';
 import { AboutComponent } from './about/about.component';
+import { TeamMembersService } from './about/team-member/team-members.service';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { TeamMemberComponent } from './about/team-member/team-member.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     FooterComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    TeamMemberComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,10 @@ import { HomeComponent } from './home/home.component';
     FuelUiModule,
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
-  providers: [FeaturesService],
+  providers: [
+    FeaturesService,
+    TeamMembersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

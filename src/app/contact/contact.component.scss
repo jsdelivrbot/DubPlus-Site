@@ -1,0 +1,80 @@
+.btn-social {
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  border-color: rgba(0,0,0,0.2);
+
+  >:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    line-height: 34px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .fa{
+    top: -1px;
+  }
+
+  img {
+    position: relative;
+    top: -2px;
+  }
+
+  &.btn-discord {
+    background-color: #7490CF;
+
+    &:hover {
+      background-color: #5B74A8;
+    }
+  }
+
+  &.btn-email {
+    background-color: #f7931e;
+
+    &:hover {
+      background-color: #da7908;
+    }
+  }
+
+  &.btn-facebook {
+    background-color: #3b5998;
+
+    &:hover {
+      background-color: #2d4373;
+    }
+  }
+
+  &.btn-github {
+    background-color: #444;
+
+    &:hover {
+      background-color: #2b2b2b;
+    }
+  }
+
+  &.btn-reddit {
+    background-color: #587ea3;
+
+    &:hover {
+      background-color: #466482;
+    }
+  }
+
+
+  &.btn-twitter {
+    background-color: #55acee;
+
+    &:hover {
+      background-color: #2795e9;
+    }
+  }
+}

@@ -19,7 +19,7 @@ export class TeamMembersService {
       ),
       new TeamMember("Francisco G.",
         "Co-Owner",
-        "Franciso has been a Dubtrack user since the beginning. He is a Moderator in the <a href=\"https://www.dubtrack.fm/join/chillout-mixer\" target=\"_blank\">Chillout Mixer</a>. He has built other Dubtrack related tools like <a href=\"https://github.com/FranciscoG/DerpyBot\" target=\"_blank\">DerpyBot<a/>!",
+        "Francisco has been a Dubtrack user since the beginning. He is a Moderator in the <a href=\"https://www.dubtrack.fm/join/chillout-mixer\" target=\"_blank\">Chillout Mixer</a>. He has built other Dubtrack related tools like <a href=\"https://github.com/FranciscoG/DerpyBot\" target=\"_blank\">DerpyBot<a/>!",
         "FranciscoG",
         "557684",
         "ciscog",

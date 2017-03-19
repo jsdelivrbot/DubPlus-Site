@@ -42,4 +42,7 @@ export class DownloadService {
       window.open('https://addons.mozilla.org/en-US/firefox/addon/dubplus/', '_blank');
   }
 
+  installUserscript(): void {
+      window.location.href = 'https://gist.github.com/coryshaw1/c1c2e7aa00a0039d1057b8e2cda85e7b/raw/d52e08f0512a18d71f003783964bf405aebacd5c/dubplus.user.js';
+  }
 }

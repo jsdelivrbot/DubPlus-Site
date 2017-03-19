@@ -31,7 +31,9 @@
       </ul>
       <div class="my-2 my-md-0 hidden-md-down"
           angulartics2On="click" angularticsEvent="HeaderClick" angularticsCategory="Install">
-            <a class="btn btn-download" routerLink="/download">Install</a>
+            <a class="btn btn-download" [class.disabled]="downloadService.isInstalled" (click)="downloadService.install()">
+                {{!downloadService.isInstalled ? 'Install' : 'Installed'}}
+            </a>
       </div>
     </div>
   </div>

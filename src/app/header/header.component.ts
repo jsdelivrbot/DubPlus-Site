@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Collapse } from 'fuel-ui';
+import { DownloadService } from '../download/download.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   navbarOpen: boolean = false;
 
-  constructor() { }
+  constructor(public downloadService: DownloadService) { }
 
   ngOnInit() {
   }

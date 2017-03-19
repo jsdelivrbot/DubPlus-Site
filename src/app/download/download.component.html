@@ -7,12 +7,20 @@
     <h2>Firefox</h2>
     <p>Install directly from the Mozilla Addons Library!</p>
     <p>
-        <a class="btn btn-secondary" href="#" role="button" angulartics2On="click"
-          angularticsEvent="Download" angularticsCategory="Chrome"
+        <button class="btn btn-secondary" (click)="downloadService.installFirefox()"
+          target="_blank" role="button" angulartics2On="click"
+          angularticsEvent="Download" angularticsCategory="Firefox"
           [angularticsProperties]="{label: 'DownloadPage'}">
             Install Firefox Addon
-        </a>
+        </button>
     </p>
+    <small class="text-muted">
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/dubplus/" target="_blank"
+          angulartics2On="click" angularticsEvent="VisitStore" angularticsCategory="Firefox"
+          [angularticsProperties]="{label: 'DownloadPage'}">
+            Visit our Firefox Addon Page
+        </a>
+    </small>
   </div>
   <!-- /.col-lg-4 -->
   <div class="download-list-item col-lg-4">
@@ -23,12 +31,19 @@
     <h2>Chrome</h2>
     <p>Install to load Dub+ automatically on Dubtrack using Chrome</p>
     <p>
-        <a class="btn btn-secondary" href="#" role="button" angulartics2On="click"
-          angularticsEvent="Download" angularticsCategory="Chrome"
+        <button class="btn btn-secondary" [disabled]="downloadService.chromeIsInstalled" (click)="downloadService.installChrome()" target="_blank" role="button"
+          angulartics2On="click" angularticsEvent="Download" angularticsCategory="Chrome"
           [angularticsProperties]="{label: 'DownloadPage'}">
-            Install Chrome Extension
-        </a>
+            {{!downloadService.chromeIsInstalled ? 'Install Chrome Extension' : 'Chrome Extension Installed!'}}
+        </button>
     </p>
+    <small class="text-muted">
+        <a href="https://chrome.google.com/webstore/detail/dubplus/ebpdoingcodjhfhmecjjfnhohhmcfnlc" target="_blank"
+          angulartics2On="click" angularticsEvent="VisitStore" angularticsCategory="Chrome"
+          [angularticsProperties]="{label: 'DownloadPage'}">
+            Visit our Chrome Webstore Page
+        </a>
+    </small>
   </div>
   <!-- /.col-lg-4 -->
   <div class="download-list-item col-lg-4">
@@ -39,11 +54,11 @@
     <h2>Userscript</h2>
     <p>Simply click the link and install it through your preferred userscript extension</p>
     <p>
-        <a class="btn btn-secondary" target="_blank" href="https://gist.github.com/coryshaw1/c1c2e7aa00a0039d1057b8e2cda85e7b/raw/9c9646ff273682370cc3e3285199295d48161cdf/dubplus.user.js"
+        <button class="btn btn-secondary" target="_blank" href="https://gist.github.com/coryshaw1/c1c2e7aa00a0039d1057b8e2cda85e7b/raw/9c9646ff273682370cc3e3285199295d48161cdf/dubplus.user.js"
           role="button" angulartics2On="click" angularticsEvent="Download" angularticsCategory="Chrome"
           [angularticsProperties]="{label: 'DownloadPage'}">
             Install Userscript
-        </a>
+        </button>
     </p>
     <small class="text-muted">This requires a userscript extension like <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiUt9vmpKrSAhXLSCYKHcHPBA8QFggcMAA&url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Ftampermonkey%2Fdhdgffkkebhmkfjojejmpbldmpobfkfo%3Fhl%3Den&usg=AFQjCNH4m9IkKXa8qEs7FQV7Fiv08bFjLA" target="_blank">Tampermonkey for Chrome</a> or <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwiUt9vmpKrSAhXLSCYKHcHPBA8QFgg3MAQ&url=https%3A%2F%2Faddons.mozilla.org%2Fen-US%2Ffirefox%2Faddon%2Fgreasemonkey%2F&usg=AFQjCNFSNcJkvg7X1Ip12Eo9sGqXx7SLQA" target="_blank">Greasemonkey for Firefox</a></small>
   </div>

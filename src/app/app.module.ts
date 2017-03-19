@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
 import { FeaturesService } from './features/features.service';
 import { DownloadComponent } from './download/download.component';
+import { DownloadService } from './download/download.service';
 import { AboutComponent } from './about/about.component';
 import { TeamMembersService } from './about/team-member/team-members.service';
 import { ContactComponent } from './contact/contact.component';
@@ -17,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { TeamMemberComponent } from './about/team-member/team-member.component';
+import { BrowserDetectionService } from './utilities/browser-detection.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { TeamMemberComponent } from './about/team-member/team-member.component';
   ],
   providers: [
     FeaturesService,
-    TeamMembersService
+    TeamMembersService,
+    DownloadService,
+    BrowserDetectionService
   ],
   bootstrap: [AppComponent]
 })

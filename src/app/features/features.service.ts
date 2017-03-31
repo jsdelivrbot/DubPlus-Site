@@ -15,6 +15,7 @@ export class FeaturesService {
     features.push(new Feature('Emotes', 'Send and display your favorite Twitch and BetterTV emotes in chat'));
     features.push(new Feature('AutoComplete Emoji', 'Use our custom autocomplete menu to finish those pesky Twitch emotes that escape your brain... or if you\'re just too lazy to type it out. We don\'t judge!'));
     features.push(new Feature('Custom Mentions', 'Set custom words and phrases to play your notification sound when they are said in chat'));
+    features.push(new Feature('Chat Cleaner', 'Automatically only keep a designated amount of chat items while clearing older ones, keeping CPU stress down', 'NEW!'));
     features.push(new Feature('Notify on Mentions', 'Use your browsers built in popup notifications to subtly let you know you are being notified when your tab isn\'t active. A brief text will also display letting you know what the notification pertains'));
     features.push(new Feature('Notify on PM', 'Notify when you receive a PM, and actually be able to respond in a proper manner!', 'NEW!'));
     features.push(new Feature('DJ Notification', 'Notify when you are coming up to DJ! Customizable setting for when to notify based on your position in the queue', 'NEW!'));

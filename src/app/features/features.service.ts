@@ -33,6 +33,8 @@ export class FeaturesService {
     features.push(new Feature('Custom Notification Sound', 'Customize the sound that plays for a notification! (Mention, alert, etc.)', 'NEW!'));
     features.push(new Feature('Snow Animation', 'Let it snow!!!'));
     features.push(new Feature('Rain Animation', 'Make it rain!!!', 'NEW!'));
+    features.push(new Feature('ETA Timer', 'Know exactly the amount of minutes before it\'s your turn to be DJ. Hover over the timer icon under the video'));
+    features.push(new Feature('Snooze Button', 'Don\'t like the song playing? Click the snooze button so the room is only muted for the current song. Your volume will automatically turn back up when a new song starts!'))
 
     return features;
   }

@@ -6,6 +6,7 @@ import {FeaturesComponent} from './features/features.component';
 import {DownloadComponent} from './download/download.component';
 import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
+import {ChangelogComponent} from './changelog/changelog.component';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,10 @@ export const routes: Routes = [
   {
     path: 'download',
     component: DownloadComponent
+  },
+  {
+    path: 'changelog',
+    component: ChangelogComponent
   },
   {
     path: 'about',

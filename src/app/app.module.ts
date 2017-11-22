@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FuelUiModule } from 'fuel-ui';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
+import { MarkdownModule } from 'angular2-markdown';
 
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -19,6 +20,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { TeamMemberComponent } from './about/team-member/team-member.component';
 import { BrowserDetectionService } from './utilities/browser-detection.service';
+import { ChangelogComponent } from './changelog/changelog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { BrowserDetectionService } from './utilities/browser-detection.service';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    TeamMemberComponent
+    TeamMemberComponent,
+    ChangelogComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { BrowserDetectionService } from './utilities/browser-detection.service';
     HttpModule,
     AppRoutingModule,
     FuelUiModule,
+    MarkdownModule,
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
   providers: [

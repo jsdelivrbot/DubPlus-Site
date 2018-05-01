@@ -21,7 +21,7 @@ export class DownloadService {
   install(): void {
     if (this._browserService.isChrome()) {
       this.installChrome();
-    } else if (this._browserService.isFirefox) {
+    } else if (this._browserService.isFirefox()) {
       this.installFirefox();
     }
 
@@ -39,7 +39,26 @@ export class DownloadService {
   }
 
   installFirefox(): void {
-      window.open('https://addons.mozilla.org/en-US/firefox/addon/dubplus/', '_blank');
+      if (this._browserService.isFirefox() && InstallTrigger && InstallTrigger.install) {
+          let platformType = 0;
+
+          if (this._browserService.isWindows()) {
+              platformType = 5;
+          } else if (this._browserService.isLinux()) {
+              platformType = 2;
+          } else if (this._browserService.isOsx()) {
+              platformType = 3;
+          } else {
+              window.open('https://addons.mozilla.org/en-US/firefox/addon/dubplus/', '_blank');
+              return;
+          }
+
+          InstallTrigger.install({
+            'DubPlus': `https://addons.mozilla.org/firefox/downloads/latest/dubplus/platform:${platformType}/addon-796093-latest.xpi?src=userprofile`
+          });
+      } else {
+          window.open('https://addons.mozilla.org/en-US/firefox/addon/dubplus/', '_blank');
+      }
   }
 
   installUserscript(): void {

@@ -37,4 +37,16 @@ export class BrowserDetectionService {
       (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
   }
 
+  isLinux(): boolean {
+    return window.navigator && window.navigator.userAgent.indexOf("Linux") !== -1
+  }
+
+  isOsx(): boolean {
+    return window.navigator && window.navigator.userAgent.indexOf("Mac") !== -1
+  }
+
+  isWindows(): boolean {
+    return window.navigator && window.navigator.userAgent.indexOf("Windows") !== -1
+  }
+
 }
